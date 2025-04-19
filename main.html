@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator-panel">
+      <h1>AGE CALCULATOR</h1>
+      <div class="input-group">
+        <input type="date" id="birthdate">
+      </div>
+      <button id="calculate">CALCULATE</button>
+      <div id="resultado"></div>
+    </div>
+
+    <div class="right-panel">
+      <div class="progress-line">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+      </div>
+      <p id="texto-etapa" class="etapa-texto"></p>
+
+      <div class="image-container">
+        <img src="/img/kid.png" class="persona-img" id="img1">
+        <img src="/img/adult.png" class="persona-img" id="img2">
+        <img src="/img/elderly.png" class="persona-img" id="img3">
+      </div>
+
+      <div id="edad-texto" class="edad-texto"></div>
+    </div>
+  </div>
+</body>
+</html>
